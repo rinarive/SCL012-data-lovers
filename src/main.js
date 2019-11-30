@@ -1,15 +1,12 @@
-/**
- * import POKEMON from './data/pokemon/pokemon.js'
- * import LoL from './data/lol/lol.js'
- * import POTTER from './data/potter/potter.js'
- */
 
-import { example } from './data.js';
+import LoL from './data/lol/lol.js'
+import { img } from './data.js';
+import { exportDefaultDeclaration } from '@babel/types';
 
-console.log(example);
+console.log(img);
+console.log(LoL);
+document.getElementById("figt").addEventListener("click", ()=>{
 
-/*
- * console.log(POKEMON);
- * console.log(LoL);
- * console.log(POTTER)
-*/
+document.getElementById("text").classList.add("../lol.js.data.imge");
+});
+
