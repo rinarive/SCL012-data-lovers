@@ -1,0 +1,16 @@
+.contenedor{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+
+}
+.elementos{
+	width:100px;
+	height:100px; 
+	margin-right:10px 
+}
+.img{
+	height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
