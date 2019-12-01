@@ -6,6 +6,41 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+.filterChamp{ /* contenedor padre */
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    
+
+}
+.elementos{
+	width:160px;
+	height:160px; 
+	margin:12px 
+}
+.img{
+	height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.containerSearch {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.backBtn{
+    display: flex;
+    justify-content:flex-start;
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+
 body{
     background: rgba(26,2,2,0.9);
     
@@ -27,12 +62,14 @@ body{
     display: flex;
     justify-content: center;  
 }
+
+
 nav{
     background: linear-gradient(180deg, rgba(180, 146, 59, 0.77) 0%, rgba(180, 146, 59, 0) 100%);
 }
 
 .barra-busqueda{
-    width: 16%;
+    width: 100%;
     height: 30px;
     background: #ffffff;
     font-size: 16px;
@@ -95,8 +132,8 @@ nav{
     display: flex;
     align-items: center;
     text-align: center;
-    
     color: #FFFFFF;
-
-
+}
+.hidden{
+visibility: hidden;
 }

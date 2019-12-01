@@ -1,12 +1,16 @@
-
 import LoL from './data/lol/lol.js'
-import { img } from './data.js';
-import { exportDefaultDeclaration } from '@babel/types';
+import { filterDataByRol, goToHome } from './data.js'
 
-console.log(img);
-console.log(LoL);
-document.getElementById("figt").addEventListener("click", ()=>{
+document.getElementById("backBtn").addEventListener("click", () => goToHome());
 
-document.getElementById("text").classList.add("../lol.js.data.imge");
-});
+document.getElementById("figther").addEventListener("click", () => filterDataByRol ("figther") );
 
+document.getElementById("Marksman").addEventListener("click", () => filterDataByRol ("Marksman") );
+
+document.getElementById("Mage").addEventListener("click", () => filterDataByRol ("Mage") );
+
+document.getElementById("Assassin").addEventListener("click", () => filterDataByRol ("Assassin") );
+
+document.getElementById("Tank").addEventListener("click", () => filterDataByRol ("Tank") );
+
+document.getElementById("Support").addEventListener("click", () => filterDataByRol ("Support") );
