@@ -13,6 +13,7 @@
 </head>
 
 <body>
+<div class="contenedor">
 
   <header class="logo">
 
@@ -20,73 +21,39 @@
 
   </header>
   
-
+  <div class="elemento">
     <nav>
-      <div>
-        <ul class="c2">
-          <li class="botones" id="figther" href="#">Figther</li>
-          <li class="botones" id="Marksman" href="#">Marksman</li>
-          <li class="botones" id="Mage" href="#">Mage</li>
-          <li class="botones" id="Assassin" href="#">Assassin</li>
-          <li class="botones" id="Tank" href="#">Tank</li>
-          <li class="botones" id="Support" href="#">Support</li>
-        </ul>
-       </div>
-      </nav>
-   
-<form action="">
-  <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="🔍Search">
-
-</form>
-<seccion>
-  <article class="titulo">CHOOSE CHAMPION</article>
-  <article class="texto"></article>
-  <div class="items" data-busqueda="name" data-imagen="data-imagen"></div>
-
-</seccion>
-
-    </div>
-    <div id="root">
-      <div id="generalChampContainer">
-        <div id="champContainer" class="container row center-align">       
-        </div>
-        <div id="champContainer-mobile" class="container row">
-        </div>
-      </div>
-        <div id="individualChamps" class="container row">  
-        </div>
-    </div>
-    </div>
-    
-</div>
-
-
-
-<script type="module" src="main.js"></script> 
-      </div>
+      <ul class="c2">
+        <li class="botones" id="figther" href="#">Figther</li>
+        <li class="botones" id="Marksman" href="#">Marksman</li>
+        <li class="botones" id="Mage" href="#">Mage</li>
+        <li class="botones" id="Assassin" href="#">Assassin</li>
+        <li class="botones" id="Tank" href="#">Tank</li>
+        <li class="botones" id="Support" href="#">Support</li>
+      </ul>
     </nav>
-    <section class="containerSearch">
+ </div>
+
+  <section class="containerSearch">
       <img src="./img/goBack.png" class="hidden" id="backBtn">
       <form>
         <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="🔍Search">
       </form>
+  </section>
 
 
-    </section>
-
-    <seccion id="contenedor">
-      <article class="titulo">CHOOSE CHAMPION</article>
-      <article class="texto"></article>
-      <div class="items" data-busqueda="name" data-imagen="data-imagen"></div>
-
-    </seccion>
-
+  <seccion class="elemento" id="elemento">
+    <article class="titulo">CHOOSE CHAMPION</article>
+    <article class="texto"></article>
+    <div class="items" data-busqueda="name" data-imagen="data-imagen"></div>
+  </seccion>
   
-
-
   
+    
+</div>
 
-  <script type="module" src="main.js"></script>
+<script type="module" src="main.js"></script> 
+
 </body>
 
 </html>
