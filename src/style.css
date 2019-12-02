@@ -8,7 +8,7 @@
 }
 .filterChamp{ /* contenedor padre */
     display: flex;
-	flex-wrap: wrap;
+	flex-wrap:wrap;
     justify-content: center;
     margin-top: 30px;
     
@@ -17,7 +17,10 @@
 .elementos{
 	width:160px;
 	height:160px; 
-	margin:12px 
+    margin:5px; 
+    
+    
+    
 }
 .img{
 	height: 100%;

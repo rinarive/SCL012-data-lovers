@@ -1,6 +1,8 @@
 import LoL from './data/lol/lol.js'
 import { filterDataByRol, goToHome } from './data.js'
 
+
+
 document.getElementById("backBtn").addEventListener("click", () => goToHome());
 
 document.getElementById("figther").addEventListener("click", () => filterDataByRol ("figther") );

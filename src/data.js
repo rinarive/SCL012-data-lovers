@@ -12,6 +12,9 @@ export const goToHome = () => {
   <div class="items" data-busqueda="name" data-imagen="data-imagen"></div>`;
 }
 
+
+
+
 export const filterDataByRol = (rol) => {
   
   contenedor.innerHTML="";
@@ -21,10 +24,8 @@ export const filterDataByRol = (rol) => {
   for (const i in LoL.data) {
     contenedor.innerHTML +=
      		 `<div class="elementos">
-     			<img class="img" src="${LoL.data[i].img}">
-          </div>`
-          for (const j in LoL.data[i].tags){
-            console.log(LoL.data[i].tags[j]);
-          }
-  }
+     			<img class="img" src="${LoL.data[i].splash}">
+     		 </div>`
+  } 
+
 };
