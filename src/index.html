@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <title>Data Lovers</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Syncopate&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Tauri&display=swap" rel="stylesheet">
-  
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <title>Data Lovers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Syncopate&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Tauri&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header class="logo">
+
+    <img src="img/League-of-Legends-OverCluster-1024x481.jpg">
+
+  </header>
   
-      <header class="logo">
-       
-          <img src="img/League-of-Legends-OverCluster-1024x481.jpg">
-       
-      </header>
-      <div class="contenedor">
-        
-      <nav>
-        <div >
+
+    <nav>
+      <div>
         <ul class="c2">
-          <li class="botones" id= "figt" href="#">Figther</li>
-          <li class="botones" href="#">Marksman</li>
-          <li class="botones" href="#">Mage</li>
-          <li class="botones" href="#">Assassin</li>
-          <li class="botones" href="#">Tank</li>
-          <li class="botones" href="#">Support</li>
+          <li class="botones" id="figther" href="#">Figther</li>
+          <li class="botones" id="Marksman" href="#">Marksman</li>
+          <li class="botones" id="Mage" href="#">Mage</li>
+          <li class="botones" id="Assassin" href="#">Assassin</li>
+          <li class="botones" id="Tank" href="#">Tank</li>
+          <li class="botones" id="Support" href="#">Support</li>
         </ul>
        </div>
       </nav>
@@ -62,5 +63,30 @@
 
 
 <script type="module" src="main.js"></script> 
+      </div>
+    </nav>
+    <section class="containerSearch">
+      <img src="./img/goBack.png" class="hidden" id="backBtn">
+      <form>
+        <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="🔍Search">
+      </form>
+
+
+    </section>
+
+    <seccion id="contenedor">
+      <article class="titulo">CHOOSE CHAMPION</article>
+      <article class="texto"></article>
+      <div class="items" data-busqueda="name" data-imagen="data-imagen"></div>
+
+    </seccion>
+
+  
+
+
+  
+
+  <script type="module" src="main.js"></script>
 </body>
+
 </html>
