@@ -45,6 +45,8 @@
 }
 
 header{
+    display: flex;
+    justify-content: center;
     background-image: url(http://www.cedricat.cat/pics/b/24/248725_league-of-legends-desktop-background.jpg);
 }
 
@@ -55,7 +57,7 @@ body{
 }
 
 .logo{
-    width: 100%;
+    width: 70%;
     
 }
 .ul{
@@ -93,7 +95,7 @@ nav{
     font-family:'Tauri', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 40px;
     align-items: center;
     text-align: center;
@@ -105,7 +107,6 @@ nav{
     color:white;
     background-color:black ;
 }
-  
 
 #champ-container{
    inline-size: auto;
@@ -129,13 +130,9 @@ nav{
 
 .texto{
     font-family: 'SWRomnc';
-    font-style: normal;
-    font-weight: normal;
     font-size: 19px;
     line-height: 28px;
     display: flex;
-    align-items: center;
-    text-align: center;
     color: #FFFFFF;
 }
 .hidden{
