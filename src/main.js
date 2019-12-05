@@ -1,4 +1,4 @@
-import LoL from './data/lol/lol.js'
+import LoL from './data/lol/lol.js' 
 import { filterDataByRol, goToHome } from './data.js'
 
 document.getElementById("backBtn").addEventListener("click", () => goToHome());
@@ -33,20 +33,6 @@ function showChamps (data) {
             <div class="card-reveal">
                 <span class="card-title">${champ.name}<i class="material-icons right">close</i></span>
                 <canvas class="champion-chart"></canvas>
-            </div>
-        </div>
-        `
-    })
-    data.forEach(champ => {
-        document.getElementById("champ-container-mobile").innerHTML += `
-        <div class="col s3 m2">
-            <div class="card mobile-version">
-                <div class="card-image">
-                    <img src="${champ.img}" class="champ-sprite">
-                </div>
-                <div class="card-content mobile-version">
-                ${champ.name}
-                </div>
             </div>
         </div>
         `

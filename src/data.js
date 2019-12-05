@@ -18,10 +18,10 @@ export const filterDataByRol = (rol) => {
   contenedor.className="filterChamp";
   backBtn.className="backBtn";
 
+
   for (const i in LoL.data) {
     contenedor.innerHTML +=
           `<div class="elementos">
-      
            <img class="img" src="${LoL.data[i].splash}">
            <h1 class="name">${LoL.data[i].name}</h1>
            <p class"titulo">${LoL.data[i].title}</p>
@@ -32,3 +32,5 @@ export const filterDataByRol = (rol) => {
           }
   }
 };
+
+

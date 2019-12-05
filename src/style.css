@@ -14,10 +14,12 @@
 }
 
 .elementos{
-   
-    height: 150px;
-    padding: 20px;
-    margin: 1vw 3.2vw;
+    display: inline-grid;
+    height: 280px;
+    width: 250px;
+    padding: 10px;
+    margin: 20px;
+    padding-top: 10px;
     border: 1px solid #937341;
     border-radius: 10px;
     background: #0A0A0C;
@@ -28,7 +30,8 @@
 
 }
 .img{
-	height: 100%;
+    height: 185px;
+    width: 230px;
  
 }
 
@@ -76,7 +79,7 @@ nav{
     background: linear-gradient(180deg, rgba(180, 146, 59, 0.77) 0%, rgba(180, 146, 59, 0) 100%);
 }
 
-.barra-busqueda{
+.search{
 
     height: 30px;
     background: #ffffff;
@@ -127,7 +130,7 @@ nav{
     text-align: center;
     color: #ffffff;
     text-shadow: 0px 4px 6px #B4923B;
-  text-size-adjust: small;
+   text-size-adjust: small;
 
 }
 
