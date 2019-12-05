@@ -3,56 +3,81 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Data Lovers</title>
+  <title> Choose Champions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css?family=Syncopate&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Tauri&display=swap" rel="stylesheet">
+  <link rel="icon" href="./img/iconLol.png">
 
 </head>
 
 <body>
-<div class="contenedor">
+  <div class="contenedor">
+    <!-- Barra de enlaces -->
+    <nav class="menu">
+      <ul class="menuNav">
 
-  <header>
-    <img class="logo" src="./img/logo.png">
-  </header>
-  
-  <div class="elemento">
-    <nav>
-      <ul class="ul">
-        <li class="botones" id="Fighter" href="#">Fighter</li>
-        <li class="botones" id="Marksman" href="#">Marksman</li>
-        <li class="botones" id="Mage" href="#">Mage</li>
-        <li class="botones" id="Assassin" href="#">Assassin</li>
-        <li class="botones" id="Tank" href="#">Tank</li>
-        <li class="botones" id="Support" href="#">Support</li>
+        <li class="enlaces"> <a id="link" href="https://boards.lan.leagueoflegends.com/es/">Foros</a> </li>
+        <li class="enlaces"> <a id="link" href="https://lan.leagueoflegends.com/es/news/">Noticias</a> </li>
+        <li class="enlaces"> <a id="link" href="https://lan.leagueoflegends.com/es/game-info/">Información del Juego</a>
+        </li>
+
       </ul>
     </nav>
- </div>
 
-  <section class="containerSearch">
-      <img src="./img/goBack.png" class="hidden" id="backBtn">
+    
+
+    <div class="elemento">
+      <nav>
+        <ul class="ul">
+          <li class="botones" id="Fighter" href="#">Fighter</li>
+          <li class="botones" id="Marksman" href="#">Marksman</li>
+          <li class="botones" id="Mage" href="#">Mage</li>
+          <li class="botones" id="Assassin" href="#">Assassin</li>
+          <li class="botones" id="Tank" href="#">Tank</li>
+          <li class="botones" id="Support" href="#">Support</li>
+        </ul>
+      </nav>
+    </div>
+    <section class="containerSearch">
+      <select class="ordenarPor">
+        <option value=""> Ordenar por </option>
+        <option value="az">A-Z</option>
+        <option value="za">Z-A</option>
+      </select>
+      <!-- <img src="./img/goBack.png" class="hidden" id="backBtn"> -->
       <form>
         <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="🔍Search">
       </form>
-  </section>
-<!-- 
-  contenedor principal dinamico  -->
-  <seccion class="elemento" id="elemento"> 
-    <article class="titulo"></article>
-    <article class="texto"></article>
+    </section>
+    <header>
+      <img class="logo" src="./img/logo.png">
+    </header>
 
-    <div class="items" data-busqueda="name" data-imagen="data-imagen"></div>
+    <seccion class="elemento" id="elemento">
 
-  <section class="champ-container" id="champ-container"></section>
+      <article class="texto">
+        <p> Elegir al campeon que necesitas para dominar la grieta a veces puede ser abrumador, en este sitio podras
+          comparar y filtrar con facilidad la informacion que necesitas.</p>
+      </article>
+
+
+      <section class="champ-container" id="champ-container"></section>
     </seccion>
-  
 
-</div>
 
-<script type="module" src="main.js"></script> 
+  </div>
+  <hr/>
+  <footer>
+      &copy; 2019 Riot Games Inc. Todos los derechos reservados. 
+  </footer>
+
+
+
+
+  <script type="module" src="main.js"></script>
 
 </body>
 
