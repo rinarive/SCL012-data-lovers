@@ -1,8 +1,12 @@
 
 import LoL from './data/lol/lol.js'
-import { filterDataByRol, goToHome} from './data.js'
+import { filterDataByRol, sortBy, goToHome } from './data.js'
 
-// document.getElementById("backBtn").addEventListener("click", () => goToHome());
+
+export const contenedor = document.getElementById("elemento"); 
+export const sort = document.getElementById("sortBy")
+
+document.getElementById("logo").addEventListener("click", () => goToHome());
 
 document.getElementById("Fighter").addEventListener("click", () => filterDataByRol ("Fighter") );
 
@@ -16,10 +20,14 @@ document.getElementById("Tank").addEventListener("click", () => filterDataByRol 
 
 document.getElementById("Support").addEventListener("click", () => filterDataByRol ("Support") );
 
-document.getElementById("order").addEventListener("click", () => filterDataByRol ("Support") );
+// Ordenar AZ - ZA 
+document.getElementById("sortBy").addEventListener("change", () => {
+let value = document.getElementById("sortBy").value;
+sortBy(value);
+});
 
 
-
+	
 
 
 

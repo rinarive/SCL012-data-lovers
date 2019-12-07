@@ -1,6 +1,5 @@
 import LoL from './data/lol/lol.js'
-let contenedor = document.getElementById("elemento");
-// let backBtn = document.getElementById("backBtn");
+import {contenedor,sort} from './main.js'
 
 //Array vacio para llenarlo de data de LoL (obj type array)
 let arrayChampions = [];
@@ -14,8 +13,8 @@ for (const i in LoL.data) {
 export const filterDataByRol = (rol) => {
   contenedor.innerHTML = "";
   contenedor.className = "filterChamp"; // Style contenedor tarjetas
-  // backBtn.className = "backBtn"; // Style para que este visible 
-  
+  sort.className = "sortBy"; // Style para que este visible 
+
   // Funcion para filtrar
   let result = arrayChampions.filter(element => { // Element= cada vuelta del bucle
     return element.tags.includes(rol);
@@ -32,15 +31,66 @@ export const filterDataByRol = (rol) => {
   });
 };
 
-// Funcion para ir al menu principal
+// Funcion para ir al menu principal html dinamico 
 export const goToHome = () => {
   contenedor.className = "elemento";
-  backBtn.className = "hidden";
   contenedor.innerHTML = "";
-  contenedor.innerHTML = `<article class="titulo">CHOOSE CHAMPION</article>
-  <article class="texto"></article>
-  <div class="items" data-busqueda="name" data-imagen="data-imagen"></div>`;
+  contenedor.innerHTML = `<article class="texto">
+  <p> Elegir al campeon que necesitas para dominar la grieta a veces puede ser abrumador, en este sitio podras
+    comparar y filtrar con facilidad la informacion que necesitas.</p>
+</article>`;
 }
+
+export const sortBy = (sortBy) => {
+  contenedor.innerHTML = "";
+
+  let result = [];
+
+  if(sortBy === "az"){
+    result=arrayChampions.sort((a,b)=>{
+      return a.id.localeCompare(b.id)
+    });
+
+    result.forEach(element => {
+      contenedor.innerHTML +=
+        `<div class="elementos">
+           <img class="img" src="${element.splash}">
+           <h1 class="name">${element.name}</h1>
+           <p class"titulo">${element.title}</p>
+           <p class"titulo">${element.tags}</p>
+         </div>`
+    });
+
+  }else if(sortBy === "za") {
+
+    result=arrayChampions.sort((a,b)=>{
+      return b.id.localeCompare(a.id)
+    });
+
+    result.forEach(element => {
+      contenedor.innerHTML +=
+        `<div class="elementos">
+           <img class="img" src="${element.splash}">
+           <h1 class="name">${element.name}</h1>
+           <p class"titulo">${element.title}</p>
+           <p class"titulo">${element.tags}</p>
+         </div>`
+    });
+
+  } else { 
+    arrayChampions.forEach(element => {
+      contenedor.innerHTML +=
+        `<div class="elementos">
+           <img class="img" src="${element.splash}">
+           <h1 class="name">${element.name}</h1>
+           <p class"titulo">${element.title}</p>
+           <p class"titulo">${element.tags}</p>
+         </div>`
+    });
+  }
+
+};
+  
 
 
 

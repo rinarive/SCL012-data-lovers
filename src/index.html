@@ -23,14 +23,17 @@
         <li class="enlaces"> <a id="link" href="https://lan.leagueoflegends.com/es/news/">Noticias</a> </li>
         <li class="enlaces"> <a id="link" href="https://lan.leagueoflegends.com/es/game-info/">Información del Juego</a>
         </li>
-
       </ul>
     </nav>
     <hr style="margin-bottom:30px" />
 
-    
-
     <div class="elemento">
+        <form>
+            <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="🔍 Search">
+          </form>
+      <header id="logo">
+        <img class="logo" src="./img/logo.png">
+      </header>
       <nav>
         <ul class="ul">
           <li class="botones" id="Fighter" href="#">Fighter</li>
@@ -43,29 +46,31 @@
       </nav>
     </div>
     <section class="containerSearch">
-      <select class="ordenarPor">
+      <select class="hidden" id="sortBy">
         <option value=""> Ordenar por </option>
         <option value="az">A-Z</option>
         <option value="za">Z-A</option>
       </select>
-      <!-- <img src="./img/goBack.png" class="hidden" id="backBtn"> -->
-      <form>
-        <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="🔍Search">
-      </form>
+      
+      
     </section>
-    <header>
-      <img class="logo" src="./img/logo.png">
-    </header>
 
+    
+    
+    
+    
+    
     <seccion class="elemento" id="elemento">
-
+      
+      
       <article class="texto">
         <p> Elegir al campeon que necesitas para dominar la grieta a veces puede ser abrumador, en este sitio podras
           comparar y filtrar con facilidad la informacion que necesitas.</p>
       </article>
 
 
-      <section class="champ-container" id="champ-container"></section>
+
+
     </seccion>
 
 
