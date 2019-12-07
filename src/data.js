@@ -35,10 +35,8 @@ export const filterDataByRol = (rol) => {
 export const goToHome = () => {
   contenedor.className = "elemento";
   contenedor.innerHTML = "";
-  contenedor.innerHTML = `<article class="texto">
-  <p> Elegir al campeon que necesitas para dominar la grieta a veces puede ser abrumador, en este sitio podras
-    comparar y filtrar con facilidad la informacion que necesitas.</p>
-</article>`;
+  sort.className = "hidden";
+ 
 }
 
 export const sortBy = (sortBy) => {
