@@ -35,7 +35,7 @@
     background: linear-gradient(180deg, rgba(180, 146, 59, 0.77) 0%, rgba(180, 146, 59, 0) 100%);
 }
 .imagen{
-    background-image: url("./img/fondo.png"); 
+ 
     height: 100%;
 }
 
@@ -107,8 +107,11 @@ header{
 }
 
 body{
-    background: linear-gradient(180deg, rgba(26, 2, 2, 0.78) 0%, rgba(26, 2, 2, 0) 100%);
-    
+    background-image: url("./img/fondo.png"); 
+    background-position-x: left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
     
 }
 
@@ -229,10 +232,9 @@ visibility: hidden;
     font-size: 2vw;
 
 }
-hr{
+
     
 
-}
 footer{
     font-family:'Tauri', sans-serif;
     font-size: 15px;
