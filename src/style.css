@@ -31,6 +31,11 @@
     font-size: 15px;
     font-family:'Tauri', sans-serif;
 }
+#link:hover{
+    /* background-color: #ffff66; */
+    color:black;
+    background: linear-gradient(180deg, rgba(180, 146, 59, 0.77) 0%, rgba(180, 146, 59, 0) 100%);
+}
 .sortBy {
     border: 0;
     outline: 0;
@@ -86,8 +91,9 @@ header{
 }
 
 body{
-    background: linear-gradient(180deg,rgba(26, 2, 2, 0.9) 0%, rgba(26, 2, 2, 0) 100%);
-  
+    /* background: linear-gradient(180deg,rgba(26, 2, 2, 0.9) 0%, rgba(26, 2, 2, 0) 100%);
+   */
+   background: #E5E5E5;
     
 }
 
@@ -118,6 +124,7 @@ body{
     float: right;
     height: 42px;
     margin-right: 63px;
+    
     
 
 }
@@ -151,7 +158,7 @@ body{
     font-family: 'Syncopate', sans-serif;
     font-size: 35px;
     display: flex;
-    color: #ffffff;
+    color: black;
     text-shadow: 0px 4px 6px #B4923B;
     margin-left: 94px;
 }

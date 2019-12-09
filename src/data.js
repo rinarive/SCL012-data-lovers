@@ -81,7 +81,7 @@ export const sortBy = (sortBy) => {
 };
 //FUNCION BARRA DE BUSQUEDA 
 export const search = (e) => {
-  console.log(e.target.value);
+  // console.log(e.target.value);
   contenedor.innerHTML = "";
   contenedor.className = "filterChamp"; // Style contenedor tarjetas
   sort.className = "sortBy"; // Style para que este visible 
