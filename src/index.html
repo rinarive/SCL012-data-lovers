@@ -14,23 +14,40 @@
 </head>
 
 <body>
+
   <div class="contenedor">
     <!-- Barra de enlaces -->
     <nav class="menu">
       <ul class="menuNav">
-
         <li class="enlaces"> <a id="link" href="https://boards.lan.leagueoflegends.com/es/">Foros</a> </li>
         <li class="enlaces"> <a id="link" href="https://lan.leagueoflegends.com/es/news/">Noticias</a> </li>
         <li class="enlaces"> <a id="link" href="https://lan.leagueoflegends.com/es/game-info/">Información del Juego</a>
         </li>
-
       </ul>
     </nav>
-    <hr style="margin-bottom:30px" />
-
-    
+    <hr style="margin-bottom:30px; background-color: #CDA458; border: 1px solid #52411D" size="5" />
 
     <div class="elemento">
+
+      <div class="imagen" >
+
+        <!-- AQUI QUIERO COMENZAR  -->
+        <form>
+          <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="🔍 Search">
+        </form>
+        <header id="logo">
+          <img class="logo" src="./img/logo.png">
+        </header>
+        <section>
+          <article class="titulo"> ¡Guía del nuevo jugador! </article>
+          <article class="texto">
+            <p> Elegir al campeon que necesitas para dominar la grieta a veces puede ser abrumador, en este sitio podras
+              comparar y filtrar con facilidad la informacion que necesitas.</p>
+          </article>
+        </section>
+      </div>
+
+      <!-- AQUI QUIERO QUE TERMINE -->
       <nav>
         <ul class="ul">
           <li class="botones" id="Fighter" href="#">Fighter</li>
@@ -41,45 +58,25 @@
           <li class="botones" id="Support" href="#">Support</li>
         </ul>
       </nav>
+      <section class="containerSearch">
+        <select class="hidden" id="sortBy">
+          <option value=""> Ordenar por </option>
+          <option value="az">A-Z</option>
+          <option value="za">Z-A</option>
+        </select>
+      </section>
+
+      <section class="elemento" id="root">
+        <!-- Aca está el html dinámico -->
+      </section>
     </div>
-    <section class="containerSearch">
-      <select class="ordenarPor">
-        <option value=""> Ordenar por </option>
-        <option value="az">A-Z</option>
-        <option value="za">Z-A</option>
-      </select>
-      <!-- <img src="./img/goBack.png" class="hidden" id="backBtn"> -->
-      <form>
-        <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="🔍Search">
-      </form>
-    </section>
-    <header>
-      <img class="logo" src="./img/logo.png">
-    </header>
-
-    <seccion class="elemento" id="elemento">
-
-      <article class="texto">
-        <p> Elegir al campeon que necesitas para dominar la grieta a veces puede ser abrumador, en este sitio podras
-          comparar y filtrar con facilidad la informacion que necesitas.</p>
-      </article>
-
-
-      <section class="champ-container" id="champ-container"></section>
-    </seccion>
-
-
   </div>
-  <hr/>
+  <hr />
   <footer>
-      &copy; 2019 Riot Games Inc. Todos los derechos reservados. 
+    &copy; 2019 Riot Games Inc. Todos los derechos reservados.
   </footer>
 
-
-
-
   <script type="module" src="main.js"></script>
-
 </body>
 
 </html>
