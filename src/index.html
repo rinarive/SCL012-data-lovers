@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
   <div class="contenedor">
     <!-- Barra de enlaces -->
     <nav class="menu">
@@ -24,21 +25,29 @@
         </li>
       </ul>
     </nav>
-    <hr style="margin-bottom:30px" />
+    <hr style="margin-bottom:30px; background-color: #CDA458; border: 1px solid #52411D" size="5" />
+
     <div class="elemento">
-      <form>
-        <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="🔍 Search">
-      </form>
-      <header id="logo">
-        <img class="logo" src="./img/logo.png">
-      </header>
-      <section>
-        <article class="titulo"> ¡Guía del nuevo jugador! </article>
-        <article class="texto">
-          <p> Elegir al campeon que necesitas para dominar la grieta a veces puede ser abrumador, en este sitio podras
-            comparar y filtrar con facilidad la informacion que necesitas.</p>
-        </article>
-      </section>
+
+      <div class="imagen" >
+
+        <!-- AQUI QUIERO COMENZAR  -->
+        <form>
+          <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="🔍 Search">
+        </form>
+        <header id="logo">
+          <img class="logo" src="./img/logo.png">
+        </header>
+        <section>
+          <article class="titulo"> ¡Guía del nuevo jugador! </article>
+          <article class="texto">
+            <p> Elegir al campeon que necesitas para dominar la grieta a veces puede ser abrumador, en este sitio podras
+              comparar y filtrar con facilidad la informacion que necesitas.</p>
+          </article>
+        </section>
+      </div>
+
+      <!-- AQUI QUIERO QUE TERMINE -->
       <nav>
         <ul class="ul">
           <li class="botones" id="Fighter" href="#">Fighter</li>
@@ -57,7 +66,7 @@
         </select>
       </section>
 
-      <section class="elemento" id="elemento">
+      <section class="elemento" id="root">
         <!-- Aca está el html dinámico -->
       </section>
     </div>

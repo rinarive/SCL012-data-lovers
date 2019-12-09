@@ -3,7 +3,7 @@ import LoL from './data/lol/lol.js'
 import { filterDataByRol, sortBy, goToHome, search } from './data.js'
 
 //Identifico html dinámico 
-export const contenedor = document.getElementById("elemento"); 
+export const contenedor = document.getElementById("root"); 
 //Identifico barra ordenarpor 
 export const sort = document.getElementById("sortBy")
 //PONGO AL ESCUCHA EL LOGO PARA QUE REGRESE A LA PAG PRINCIPAL
