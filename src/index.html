@@ -27,6 +27,26 @@
     </nav>
   <hr/ style="margin-bottom: 20px; color:solid #937341 ;">
     <div class="elemento">
+
+      <div class="imagen" >
+
+        <!-- AQUI QUIERO COMENZAR  -->
+        <form>
+          <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="🔍 Search">
+        </form>
+        <header id="logo">
+          <img class="logo" src="./img/logo.png">
+        </header>
+        <section>
+          <article class="titulo"> ¡Guía del nuevo jugador! </article>
+          <article class="texto">
+            <p> Elegir al campeon que necesitas para dominar la grieta a veces puede ser abrumador, en este sitio podras
+              comparar y filtrar con facilidad la informacion que necesitas.</p>
+          </article>
+        </section>
+      </div>
+
+      <!-- AQUI QUIERO QUE TERMINE -->
       <nav>
         <ul class="ul">
           <li class="botones" id="Fighter" href="#">Fighter</li>
@@ -37,6 +57,17 @@
           <li class="botones" id="Support" href="#">Support</li>
         </ul>
       </nav>
+      <section class="containerSearch">
+        <select class="hidden" id="sortBy">
+          <option value=""> Ordenar por </option>
+          <option value="az">A-Z</option>
+          <option value="za">Z-A</option>
+        </select>
+      </section>
+
+      <section class="elemento" id="root">
+        <!-- Aca está el html dinámico -->
+      </section>
     </div>
     <section class="containerSearch">
       <select class="ordenarPor">
@@ -65,16 +96,12 @@
 
 
   </div>
-  <hr/>
+  <hr />
   <footer>
-      &copy; 2019 Riot Games Inc. Todos los derechos reservados. 
+    &copy; 2019 Riot Games Inc. Todos los derechos reservados.
   </footer>
 
-
-
-
   <script type="module" src="main.js"></script>
-
 </body>
 
 </html>
