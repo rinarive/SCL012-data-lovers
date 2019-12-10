@@ -20,7 +20,7 @@ export const filterDataByRol = (rol) => {
   // Arreglo con los campeones filtrados por rol 
   result.forEach(element => {
     contenedor.innerHTML +=
-      `<div class="elementos">
+    `<div class="elementos">
          <img class="img" src="${element.splash}">
          <h1 class="name">${element.name}</h1>
          <p class"titulo">${element.title}</p>
@@ -36,8 +36,71 @@ export const goToHome = () => {
   sort.className = "hidden";
 }
 
+//FUNCION PARA ORDENAR POR AZ - ZA
+export const sortBy = (sortBy) => {
+  contenedor.innerHTML = "";
+
+  let result = [];
+
+  if (sortBy === "az") {
+    result = arrayChampions.sort((a, b) => {
+      return a.id.localeCompare(b.id)
+    });
+    result.forEach(element => {
+      contenedor.innerHTML +=
+      `<div class="elementos">
+           <img class="img" src="${element.splash}">
+           <h1 class="name">${element.name}</h1>
+           <p class"titulo">${element.title}</p>
+           <p class"titulo">${element.tags}</p>
+         </div>`
+    });
+  } else if (sortBy === "za") {
+    result = arrayChampions.sort((a, b) => {
+      return b.id.localeCompare(a.id)
+    });
+    result.forEach(element => {
+      contenedor.innerHTML +=
+      `<div class="elementos">
+           <img class="img" src="${element.splash}">
+           <h1 class="name">${element.name}</h1>
+           <p class"titulo">${element.title}</p>
+           <p class"titulo">${element.tags}</p>
+         </div>`
+    });
+  } else {
+    arrayChampions.forEach(element => {
+      contenedor.innerHTML +=
+      `<div class="elementos">
+           <img class="img" src="${element.splash}">
+           <h1 class="name">${element.name}</h1>
+           <p class"titulo">${element.title}</p>
+           <p class"titulo">${element.tags}</p>
+         </div>`
+    });
+  }
+};
+//FUNCION BARRA DE BUSQUEDA 
+export const search = (e) => {
+  // console.log(e.target.value);
+  contenedor.innerHTML = "";
+  contenedor.className = "filterChamp"; // Style contenedor tarjetas
+  sort.className = "sortBy"; // Style para que este visible 
+
+
   for (const i in LoL.data) {
     contenedor.innerHTML +=
+ master
+    `<div class="elementos">
+         <img class="img" src="${element.splash}">
+         <h1 class="name">${element.name}</h1>
+         <p>${element.title}</p>
+         <p>${element.tags}</p>
+       </div>`
+  });
+  e.preventDefault();
+};
+
           `<div class="elementos">
            <img class="img" src="${LoL.data[i].splash}">
            <h1 class="name">${LoL.data[i].name}</h1>
@@ -47,8 +110,4 @@ export const goToHome = () => {
           for (const j in LoL.data[i].tags){
             console.log(LoL.data[i].tags[j]);
           }
-  }
-
-
-
-
+  
