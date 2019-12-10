@@ -20,7 +20,7 @@ export const filterDataByRol = (rol) => {
   // Arreglo con los campeones filtrados por rol 
   result.forEach(element => {
     contenedor.innerHTML +=
-      `<div class="elementos">
+    `<div class="elementos">
          <img class="img" src="${element.splash}">
          <h1 class="name">${element.name}</h1>
          <p class"titulo">${element.title}</p>
@@ -47,7 +47,7 @@ export const sortBy = (sortBy) => {
     });
     result.forEach(element => {
       contenedor.innerHTML +=
-        `<div class="elementos">
+      `<div class="elementos">
            <img class="img" src="${element.splash}">
            <h1 class="name">${element.name}</h1>
            <p class"titulo">${element.title}</p>
@@ -60,7 +60,7 @@ export const sortBy = (sortBy) => {
     });
     result.forEach(element => {
       contenedor.innerHTML +=
-        `<div class="elementos">
+      `<div class="elementos">
            <img class="img" src="${element.splash}">
            <h1 class="name">${element.name}</h1>
            <p class"titulo">${element.title}</p>
@@ -70,7 +70,7 @@ export const sortBy = (sortBy) => {
   } else {
     arrayChampions.forEach(element => {
       contenedor.innerHTML +=
-        `<div class="elementos">
+      `<div class="elementos">
            <img class="img" src="${element.splash}">
            <h1 class="name">${element.name}</h1>
            <p class"titulo">${element.title}</p>
@@ -92,11 +92,11 @@ export const search = (e) => {
   });
   result.forEach(element => {
     contenedor.innerHTML +=
-      `<div class="elementos">
+    `<div class="elementos">
          <img class="img" src="${element.splash}">
          <h1 class="name">${element.name}</h1>
-         <p class"titulo">${element.title}</p>
-         <p class"titulo">${element.tags}</p>
+         <p>${element.title}</p>
+         <p>${element.tags}</p>
        </div>`
   });
   e.preventDefault();

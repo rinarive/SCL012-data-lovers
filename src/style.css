@@ -28,7 +28,6 @@
     font-family:'Tauri', sans-serif;
 }
 #link:hover{
-    /* background-color: #ffff66; */
     color:black;
     background: linear-gradient(180deg, rgba(180, 146, 59, 0.77) 0%, rgba(180, 146, 59, 0) 100%);
 }
@@ -49,7 +48,6 @@
     margin-left: 65px;
     font-family: 'Tauri', sans-serif;
     margin-top: 25px;
-
 }
 	
 
@@ -58,9 +56,6 @@
     display: flex;
 	flex-wrap: wrap;
     justify-content: center;
-    
-    
-
 }
 
 .elementos{
@@ -99,11 +94,6 @@ header{
 
 body{
     background-color: #f7f7f7;
-    /* background-image: url("./img/body.jpeg"); 
-    background-repeat: no-repeat;
-    background-position: right; 
-    width: 200px;   */
-   
 }
 
 
@@ -124,9 +114,6 @@ body{
     background: linear-gradient(180deg, rgba(180, 146, 59, 0.77) 0%, rgba(180, 146, 59, 0) 100%); 
 }
 
-
-
-
 .barra-busqueda{
     border: 0;
     outline: 0;
@@ -135,8 +122,6 @@ body{
     font-size: 20px;
     height: 42px;
     margin-left: 90px;
-
-
 }
 
 .botones{
@@ -247,3 +232,4 @@ footer{
     text-align: center;
 
 }
+
