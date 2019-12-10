@@ -105,10 +105,3 @@ export const search = (e) => {
   });
   e.preventDefault();
 };
-
-
-
-
-
-
-

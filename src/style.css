@@ -31,11 +31,12 @@
     color:black;
     background: linear-gradient(180deg, rgba(180, 146, 59, 0.77) 0%, rgba(180, 146, 59, 0) 100%);
 }
-.imagen{
+.imagen {
     background-image: url("./img/fondo.png"); 
-    height: 100%;
+    height: 80%;
+    background-position-x: right;
+    background-repeat: no-repeat;
 }
-
 .sortBy {
     border: 0;
     outline: 0;
@@ -49,71 +50,60 @@
     font-family: 'Tauri', sans-serif;
     margin-top: 25px;
 }
-	
-
-
 .filterChamp{ /* contenedor campeones */
     display: flex;
 	flex-wrap: wrap;
     justify-content: center;
 }
-
 .elementos{
     display: inline-grid;
-    height: 330px;
+    height: 350px;
     padding: 10px;
     margin: 20px;
     border: 1px solid #937341;
     border-radius: 10px;
-    color: black;
+    color: whitesmoke;
+    background:rgb(147, 115, 65);
     width: 250px;
     padding-top: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
 }
 .img{
 	height: 185px;
     width: 230px;
     transition: transform .5s ease;
-    padding: 10px;
+    padding: 0px;
+    border-radius: 10px;
 }
 .img:hover{
     transform: scale(1.1);
 }
-
 .containerSearch {
     display: flex;
     justify-content: space-between;
     height: 90px;
 }
-
-
-header{
+header div{
     display: flex;
-    justify-content: center;
- 
+    justify-content: left ;
+    margin-left: 100px;
 }
-
 body{
     background-color: #f7f7f7;
 }
-
-
-
 .logo{
-    width: 65%;
+    width: 40%;
     margin-bottom: 33px;
-    margin-left: -373px;
+    margin-left: 40px;
     margin-top: 30px;
-   
-    
+    justify-items: left;
 }
 .ul{
-   
     flex-direction: row;
     display: flex;
     justify-content: center; 
     background: linear-gradient(180deg, rgba(180, 146, 59, 0.77) 0%, rgba(180, 146, 59, 0) 100%); 
 }
-
 .barra-busqueda{
     border: 0;
     outline: 0;
@@ -123,7 +113,6 @@ body{
     height: 42px;
     margin-left: 90px;
 }
-
 .botones{
     width: 100%;
     height: 55px;
@@ -144,11 +133,6 @@ body{
     color:white;
     background-color:black ;
 }
-
-/* #champ-container{
-   inline-size: auto;
-    border-radius: 10px;
-} */
 .titulo{
     font-family: 'Syncopate', sans-serif;
     font-size: 35px;
@@ -157,7 +141,6 @@ body{
     text-shadow: 0px 4px 6px #B4923B;
     margin-left: 94px;
 }
-
 .texto{
     margin-left: 94px;
     font-family: 'Tauri', sans-serif;
@@ -167,62 +150,11 @@ body{
     width: 600px;
     margin-top: 20px;
     margin-bottom: 50px;
-    padding-bottom: 30px;
-    
+    padding-bottom: 30px; 
 }
-
 .hidden{
 visibility: hidden;
 }
-
-/* .card {
-    margin: 1vw 3.2vw;
-    border: 1px solid #937341;
-    border-radius: 10px;
-    background: #0A0A0C;
-    color: black;
-    margin-right: 4.15%;
-    margin-left: 4.15%;
-    width: auto;
-}
-
-.row .col.s3 {
-    margin-left: 4.15%;
-}
-
-.card .card-reveal {
-    background: #0A0A0C;
-} */
-/* .img-champion {
-    padding: 10px;
-}
-
-.champ-title {
-    font-size: 0.8rem;
-    font-style: italic;
-}
-
-.card .card-content .card-title {
-    margin-bottom: 0;
-} */
-/* #filters {
-    color: black;
-    font-size: 2vw;
-    position: absolute;
-    top: 16vw;
-    width: 99%;
-    margin: 5px;
-    text-align: center;
-}
-
-.filter-box {
-    color: #F1E6D0;
-    border: 1px solid #F1E6D0;
-    border-radius: 10px;
-    font-size: 2vw;
-
-} */
-
 footer{
     font-family:'Tauri', sans-serif;
     font-size: 15px;
@@ -272,7 +204,7 @@ footer{
     cursor: pointer;
   }
 
-  * Extra small devices (phones, 600px and down) */
+  /*  Extra small devices (phones, 600px and down) */ 
   @media only screen and (max-width: 600px) {
       .ul { 
       flex-direction: column;
