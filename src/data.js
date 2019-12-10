@@ -97,7 +97,7 @@ export const search = (e) => {
          <p>${element.title}</p>
          <p>${element.tags}</p>
        </div>`
-  });
+  };
   e.preventDefault();
 };
 
