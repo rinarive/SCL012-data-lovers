@@ -20,11 +20,12 @@ export const filterDataByRol = (rol) => {
   // Arreglo con los campeones filtrados por rol 
   result.forEach(element => {
     contenedor.innerHTML +=
-    `<div class="elementos">
+      `<div class="elementos" onclick="showModal()">
          <img class="img" src="${element.splash}">
          <h1 class="name">${element.name}</h1>
          <p class"titulo">${element.title}</p>
-         <p class"titulo">${element.tags}</p>
+         <p class"titulo"> Rol: ${element.tags}</p>
+         <p class"titulo"> HP: ${element.stats.hp} ♥</p>
        </div>`
   });
 };
@@ -47,7 +48,7 @@ export const sortBy = (sortBy) => {
     });
     result.forEach(element => {
       contenedor.innerHTML +=
-      `<div class="elementos">
+        `<div class="elementos" onclick="showModal()">
            <img class="img" src="${element.splash}">
            <h1 class="name">${element.name}</h1>
            <p class"titulo">${element.title}</p>
@@ -60,7 +61,7 @@ export const sortBy = (sortBy) => {
     });
     result.forEach(element => {
       contenedor.innerHTML +=
-      `<div class="elementos">
+        `<div class="elementos" onclick="showModal()">
            <img class="img" src="${element.splash}">
            <h1 class="name">${element.name}</h1>
            <p class"titulo">${element.title}</p>
@@ -70,7 +71,7 @@ export const sortBy = (sortBy) => {
   } else {
     arrayChampions.forEach(element => {
       contenedor.innerHTML +=
-      `<div class="elementos">
+        `<div class="elementos" onclick="showModal()">
            <img class="img" src="${element.splash}">
            <h1 class="name">${element.name}</h1>
            <p class"titulo">${element.title}</p>
@@ -81,23 +82,26 @@ export const sortBy = (sortBy) => {
 };
 //FUNCION BARRA DE BUSQUEDA 
 export const search = (e) => {
-  // console.log(e.target.value);
+
   contenedor.innerHTML = "";
   contenedor.className = "filterChamp"; // Style contenedor tarjetas
-  sort.className = "sortBy"; // Style para que este visible 
-
+  
   let result = arrayChampions.filter(element => { // Element= cada vuelta del bucle
     let a = element.name.toUpperCase();
     return a.includes(e.target.value.toUpperCase());
   });
+  
   result.forEach(element => {
     contenedor.innerHTML +=
-    `<div class="elementos">
+      `<div class="elementos" onclick="showModal()">
          <img class="img" src="${element.splash}">
          <h1 class="name">${element.name}</h1>
-         <p>${element.title}</p>
-         <p>${element.tags}</p>
+         <p class"titulo"> Attack: ${element.info.attack}</p>
+         <p class"titulo"> Defense: ${element.info.defense}</p>
+         <p class"titulo"> Magic: ${element.info.magic}</p>
+         <p class"titulo"> Difficulty: ${element.info.difficulty}</p>
        </div>`
+
   });
   e.preventDefault();
 };
