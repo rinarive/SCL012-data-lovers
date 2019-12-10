@@ -66,10 +66,10 @@
         </select>
       </section>
 
-      <section class="elemento" id="root">
+      <div class="elemento" id="root">
         <!-- Aca está el html dinámico -->
 
-      </section>
+      </div>
     </div>
   </div>
   <hr />
@@ -89,6 +89,23 @@
 
       </div>
     </div>
+
+  <script>
+   
+    const showModal = () => {
+      var modal = document.getElementById("myModal");
+      var span = document.getElementsByClassName("close")[0];
+      modal.style.display = "block";
+      console.log("estara entrando? :(");
+      document.getElementById("modal-blurb").innerHTML+= `<img class="img" src="${arrayChampions.splash}">`
+      document.getElementById("modal-attack").innerHTML="por favor!";
+      document.getElementById("modal-defense").innerHTML="la data de Lol :(";
+
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+    }
+  </script>
 
   <script type="module" src="main.js"></script>
   <script type="module" src="data.js"></script>

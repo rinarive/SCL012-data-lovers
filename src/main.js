@@ -1,6 +1,6 @@
 
 import LoL from './data/lol/lol.js'
-import { filterDataByRol, sortBy, goToHome, search } from './data.js'
+import { filterDataByRol, sortBy, goToHome, search,  } from './data.js'
 
 //Identifico html dinámico 
 export const contenedor = document.getElementById("root"); 
@@ -28,6 +28,8 @@ document.getElementById("barra-busqueda").addEventListener("keydown", (e) => {
         search(e);
 	   }
 });
+
+
 	
 
 
