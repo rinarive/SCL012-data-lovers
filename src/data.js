@@ -35,7 +35,6 @@ export const goToHome = () => {
   contenedor.innerHTML = "";
   sort.className = "hidden";
 }
-
 //FUNCION PARA ORDENAR POR AZ - ZA
 export const sortBy = (sortBy) => {
   contenedor.innerHTML = "";
@@ -87,27 +86,18 @@ export const search = (e) => {
   contenedor.className = "filterChamp"; // Style contenedor tarjetas
   sort.className = "sortBy"; // Style para que este visible 
 
-
-  for (const i in LoL.data) {
+  let result = arrayChampions.filter(element => { // Element= cada vuelta del bucle
+    let a = element.name.toUpperCase();
+    return a.includes(e.target.value.toUpperCase());
+  });
+  result.forEach(element => {
     contenedor.innerHTML +=
- master
     `<div class="elementos">
          <img class="img" src="${element.splash}">
          <h1 class="name">${element.name}</h1>
          <p>${element.title}</p>
          <p>${element.tags}</p>
        </div>`
-  };
+  });
   e.preventDefault();
 };
-
-          `<div class="elementos">
-           <img class="img" src="${LoL.data[i].splash}">
-           <h1 class="name">${LoL.data[i].name}</h1>
-           <p class"titulo">${LoL.data[i].title}</p>
-
-          </div>`
-          for (const j in LoL.data[i].tags){
-            console.log(LoL.data[i].tags[j]);
-          }
-  

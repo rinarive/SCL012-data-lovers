@@ -11,10 +11,8 @@
     justify-content: flex-end;
     width: 100%;
     height: 80px;
-    padding-right: 50px;
     align-items: flex-end;
-
-  
+    padding-right: 50px;
 }
 .menuNav{
     display: flex;
@@ -33,9 +31,12 @@
     color:black;
     background: linear-gradient(180deg, rgba(180, 146, 59, 0.77) 0%, rgba(180, 146, 59, 0) 100%);
 }
-.imagen{
- 
+.imagen {
+    background-image: url("./img/fondo.png"); 
     height: 100%;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    
 }
 
 .sortBy {
@@ -63,10 +64,6 @@
 .elementos{
     display: inline-grid;
     height: 280px;
-    width: 250px;
-    padding: 10px;
-    margin: 20px;
-    padding-top: 10px;
     padding: 10px;
     margin: 20px;
     border: 1px solid #937341;
@@ -76,9 +73,6 @@
     padding-top: 10px;
 }
 .img{
-    height: 185px;
-    width: 230px;
- 
 	height: 185px;
     width: 230px;
     transition: transform .5s ease;
@@ -95,32 +89,25 @@
 }
 
 
-header{
+header div{
     display: flex;
-    justify-content: center;
+    justify-content: left ;
+    margin-left: 100px;
  
 }
 
 body{
-
     background-color: #f7f7f7;
-
-    background-image: url("./img/fondo.png"); 
-    background-position-x: left;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-   
-    
-
 }
 
 
 
 .logo{
-    width: 65%;
+    width: 40%;
     margin-bottom: 33px;
-    margin-left: -373px;
+    margin-left: 40px;
     margin-top: 30px;
+    justify-items: left;
    
     
 }
@@ -141,7 +128,6 @@ body{
     height: 42px;
     margin-left: 90px;
 }
-
 
 .botones{
     width: 100%;
@@ -164,18 +150,17 @@ body{
     background-color:black ;
 }
 
-#champ-container{
+/* #champ-container{
    inline-size: auto;
     border-radius: 10px;
-} 
+} */
 .titulo{
     font-family: 'Syncopate', sans-serif;
     font-size: 35px;
     display: flex;
     color: black;
     text-shadow: 0px 4px 6px #B4923B;
-   text-size-adjust: small;
-
+    margin-left: 94px;
 }
 
 .texto{
@@ -183,9 +168,9 @@ body{
     font-family: 'Tauri', sans-serif;
     font-size: 18px;
     display: flex;
-    color: #1A0202;
-    width: 724px;
-    margin-top: 30px;
+    color: black;
+    width: 600px;
+    margin-top: 20px;
     margin-bottom: 50px;
     padding-bottom: 30px;
     
@@ -195,7 +180,7 @@ body{
 visibility: hidden;
 }
 
- .card {
+/* .card {
     margin: 1vw 3.2vw;
     border: 1px solid #937341;
     border-radius: 10px;
@@ -212,8 +197,8 @@ visibility: hidden;
 
 .card .card-reveal {
     background: #0A0A0C;
-} 
- .img-champion {
+} */
+/* .img-champion {
     padding: 10px;
 }
 
@@ -224,8 +209,8 @@ visibility: hidden;
 
 .card .card-content .card-title {
     margin-bottom: 0;
-} 
- #filters {
+} */
+/* #filters {
     color: black;
     font-size: 2vw;
     position: absolute;
@@ -241,9 +226,7 @@ visibility: hidden;
     border-radius: 10px;
     font-size: 2vw;
 
-}
-
-    
+} */
 
 footer{
     font-family:'Tauri', sans-serif;
@@ -254,4 +237,3 @@ footer{
     text-align: center;
 
 }
-
