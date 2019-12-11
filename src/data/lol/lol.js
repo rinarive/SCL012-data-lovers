@@ -2403,7 +2403,7 @@ export default {
       img:
         'https://www.masterypoints.com/assets/img/lol/champion_icons/Jinx.png',
       splash:
-        'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/jinx_0.jpg',
+        'http://dragon.leagueoflegends.com/cdn/img/champion/splash/jinx_0.jpg',
       blurb:
         'Jinx lives to wreak havoc without a thought for the consequences, leaving a trail of mayhem and panic in her wake. A manic and impulsive criminal, she despises nothing more than boredom, and gleefully brings her own volatile brand of pandemonium to ...',
       info: {
