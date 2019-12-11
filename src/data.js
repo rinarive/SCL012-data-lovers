@@ -1,20 +1,20 @@
-import LoL from './data/lol/lol.js'
-import { contenedor, sort } from './main.js'
+import LoL from './data/lol/lol.js';
+import { contenedor, sort } from './main.js';
 
-//Array vacio para llenarlo de la data de LoL 
-let arrayChampions = [];
+//array vacio para llenarlo de la data de LoLnpm  
+const arrayChampions = [];
 
 //Llenamos el array con la data de LoL, para tratarlo como arreglo
 for (const i in LoL.data) {
   arrayChampions.push(LoL.data[i]);
-};
-// FUNCION PARA FILTRAR POR ROL 
+}
+//FUNCION PARA FILTRAR POR ROL
 export const filterDataByRol = (rol) => {
-  contenedor.innerHTML = "";
-  contenedor.className = "filterChamp"; // Style contenedor tarjetas
-  sort.className = "sortBy"; // Style para que este visible 
+  contenedor.innerHTML = '';
+  contenedor.className = 'filterChamp'; // Style contenedor tarjetas
+  sort.className = 'sortBy';//Style para que este visible
 
-  let result = arrayChampions.filter(element => {
+  const result = arrayChampions.filter(element => {
     return element.tags.includes(rol);
   });
   // Arreglo con los campeones filtrados por rol 

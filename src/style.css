@@ -191,6 +191,7 @@ footer{
   .imgModal{
       height: 30%;
       width: 60%;
+      justify-content: center;
   }
   
   
