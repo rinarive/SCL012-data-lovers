@@ -12,9 +12,7 @@
   <link rel="icon" href="./img/iconLol.png">
 
 </head>
-
 <body>
-
   <div class="contenedor">
     <!-- Barra de enlaces -->
     <nav class="menu">
@@ -26,11 +24,8 @@
       </ul>
     </nav>
     <hr style="margin-bottom:30px; background-color: #CDA458; border: 1px #52411D" size="4" />
-
     <div class="elemento">
-
       <div class="imagen">
-
         <!-- AQUI QUIERO COMENZAR  -->
         <form>
           <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="🔍 Search">
@@ -41,12 +36,11 @@
         <section>
           <article class="titulo"> ¡Guía del nuevo jugador! </article>
           <article class="texto">
-            <p> Elegir al campeón que necesitas para dominar la grieta a veces puede ser abrumador, en éste sitio podrás
+           <p> Elegir al campeón que necesitas para dominar la grieta a veces puede ser abrumador, en éste sitio podrás
               comparar y filtrar con facilidad la información que necesitas.</p>
           </article>
         </section>
       </div>
-
       <!-- AQUI QUIERO QUE TERMINE -->
       <nav>
         <ul class="ul">
@@ -65,51 +59,22 @@
           <option value="za">Z-A</option>
         </select>
       </section>
-
       <div class="elemento" id="root">
         <!-- Aca está el html dinámico -->
-
       </div>
     </div>
-  </div>
-  <hr />
-  <footer>
-    &copy; 2019 Riot Games Inc. Todos los derechos reservados.
-  </footer>
-
-  <!-- The Modal -->
-  <div id="myModal" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-          <h1 id="modal-blurb"> </h1>
-          <p id="modal-attack"></p>
-          <p id="modal-defense"></p>
-          <p id="modal-magic"></p>
-          <p id="modal-difficulty"></p>
-
+   </div>
+   <hr />
+   <footer> &copy; 2019 Riot Games Inc. Todos los derechos reservados.</footer>
+   <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content"> 
+        <h1 id="modal-splash"> </h1> 
+        <p  id="modal-blurb"> </p>
+      
       </div>
     </div>
-
-  <script>
-   
-    const showModal = () => {
-      var modal = document.getElementById("myModal");
-      var span = document.getElementsByClassName("close")[0];
-      modal.style.display = "block";
-      console.log("estara entrando? :(");
-      document.getElementById("modal-blurb").innerHTML+= `<img class="img" src="${arrayChampions.splash}">`
-      document.getElementById("modal-attack").innerHTML="por favor!";
-      document.getElementById("modal-defense").innerHTML="la data de Lol :(";
-
-      span.onclick = function () {
-        modal.style.display = "none";
-      }
-    }
-  </script>
-
   <script type="module" src="main.js"></script>
   <script type="module" src="data.js"></script>
-
 </body>
-
 </html>
