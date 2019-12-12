@@ -1,13 +1,15 @@
 // importamos la función `example`
-import { example } from "../src/data";
+import LoL from './data/lol/lol.js';
+import { filterDataByRol, sortBy, search, goToHome,} from './data.js';
 
-describe('example', () => {
+describe('data', () => {
 
-  it('debería ser una función', () => {
-    expect(typeof example).toBe('function');
+  it('Debería retornar los nombres de los campeones', () => {
+    expect(typeof filterDataByRol).toBe('function');
   });
 
   describe('example', () => {
     // escribe aquí tu test
   });
 });
+
