@@ -1,9 +1,6 @@
 import LoL from './data/lol/lol.js';
+import { contenedor, sort,modal } from './main.js';
 
-const contenedor = document.getElementById('root'); 
-// Identifico barra ordenarpor 
-const sort = document.getElementById('sortBy');
-// array vacio para llenarlo de la data de LoL 
 const arrayChampions = [];
 for (const i in LoL.data) {
   arrayChampions.push(LoL.data[i]);
@@ -20,14 +17,15 @@ export const filterDataByRol = (rol) => {
 // Arreglo con los campeones filtrados por rol
   result.forEach(element => {
     contenedor.innerHTML+=
-      `<div class='elementos' id="${element.id}">
-         <img class="img" src="${element.splash}">
-         <h1 class="name">${element.name}</h1>
-         <p class"titulo">${element.title}</p>
-         <p class"titulo"> Rol: ${element.tags}</p>
-         <p class"titulo"> HP: ${element.stats.hp} ❤️ </p>
-       </div>`;
+    `<div class="elementos" id="${element.id}">
+    <img class="img" src="${element.splash}">
+    <h1 class="name">${element.name}</h1>
+    <h2 class"titulo"> Rol: ${element.tags}</h2>
+    <h3 class"titulo">${element.title}</h3>
+    <p class"titulo"> HP: ${element.stats.hp} ❤️ </p>
+  </div>`;
   });
+
   result.forEach(element => {
     document.getElementById(element.id).addEventListener('click', () => showModal(element));
   });
@@ -50,13 +48,13 @@ export const sortBy = (sortBy) => {
     });
     result.forEach(element => {
       contenedor.innerHTML +=
-        `<div class='elementos' id="${element.id}">
-           <img class="img" src="${element.splash}">
-           <h1 class="name">${element.name}</h1>
-           <p class"titulo">${element.title}</p>
-           <p class"titulo">${element.tags}</p>
-         </div>`;
-      
+      `<div class="elementos" id="${element.id}">
+      <img class="img" src="${element.splash}">
+      <h1 class="name">${element.name}</h1>
+      <h2 class"titulo"> Rol: ${element.tags}</h2>
+      <h3 class"titulo">${element.title}</h3>
+      <p class"titulo"> HP: ${element.stats.hp} ❤️ </p>
+    </div>`;
     });
   } else if (sortBy === 'za') {
     result = arrayChampions.sort((a, b) => {
@@ -64,26 +62,30 @@ export const sortBy = (sortBy) => {
     });
     result.forEach(element => {
       contenedor.innerHTML +=
-        `<div class='elementos' id="${element.id}">
-           <img class="img" src="${element.splash}">
-           <h1 class="name">${element.name}</h1>
-           <p class"titulo">${element.title}</p>
-           <p class"titulo">${element.tags}</p>
-         </div>`;
-      document.getElementById(element.id).addEventListener('click', () => {
-      });
+      `<div class="elementos" id="${element.id}">
+      <img class="img" src="${element.splash}">
+      <h1 class="name">${element.name}</h1>
+      <h2 class"titulo"> Rol: ${element.tags}</h2>
+      <h3 class"titulo">${element.title}</h3>
+      <p class"titulo"> HP: ${element.stats.hp} ❤️ </p>
+    </div>`;
+    result.forEach(element => {
+      document.getElementById(element.id).addEventListener('click', () => showModal(element));
+    });
     });
   } else {
     arrayChampions.forEach(element => {
       contenedor.innerHTML +=
-        `<div class='elementos' id="${element.id}">
-           <img class="img" src="${element.splash}">
-           <h1 class="name">${element.name}</h1>
-           <p class"titulo">${element.title}</p>
-           <p class"titulo">${element.tags}</p>
-         </div>`;
-      document.getElementById(element.id).addEventListener('click', () => {
-      });
+      `<div class="elementos" id="${element.id}">
+      <img class="img" src="${element.splash}">
+      <h1 class="name">${element.name}</h1>
+      <h2 class"titulo"> Rol: ${element.tags}</h2>
+      <h3 class"titulo">${element.title}</h3>
+      <p class"titulo"> HP: ${element.stats.hp} ❤️ </p>
+    </div>`;
+         result.forEach(element => {
+          document.getElementById(element.id).addEventListener('click', () => showModal(element));
+        });
     });
   }
 };
@@ -97,29 +99,33 @@ export const search = (e) => {
   });
   result.forEach(element => {
     contenedor.innerHTML +=
-      `<div class='elementos' id="${element.id}">
-         <img class="img" src="${element.splash}">
-         <h1 class="name">${element.name}</h1>
-         <p class"titulo"> Attack: ${element.info.attack}</p>
-         <p class"titulo"> Defense: ${element.info.defense}</p>
-         <p class"titulo"> Magic: ${element.info.magic}</p>
-         <p class"titulo"> Difficulty: ${element.info.difficulty}</p>
-       </div>`;
+    `<div class="elementos" id="${element.id}">
+    <img class="img" src="${element.splash}">
+    <h1 class="name">${element.name}</h1>
+    <h2 class"titulo"> Rol: ${element.tags}</h2>
+    <h3 class"titulo">${element.title}</h3>
+    <p class"titulo"> HP: ${element.stats.hp} ❤️ </p>
+  </div>`;
    
   });
   e.preventDefault();
-  result.forEach(element => {
+    result.forEach(element => {
     document.getElementById(element.id).addEventListener("click", () => showModal(element));
   });
 };
 
 const showModal = (champion) => {
-  var modal = document.getElementById('myModal');
   
   modal.style.display = 'block';
   
   document.getElementById('modal-splash').innerHTML = `<img class="imgModal" src="${champion.splash}">`;
-  document.getElementById('modal-blurb').innerHTML = `<p> Leyenda: ${champion.blurb}</p>`
+  document.getElementById("modal-splash").innerHTML = `<img class="imgModal" src="${champion.splash}">`
+  document.getElementById("modal-name").innerHTML= `<h1> ${champion.name}</h1>`
+  document.getElementById("modal-title").innerHTML= `<h2> ${champion.title} </h2>`
+  document.getElementById("modal-attack").innerHTML=`<p>Ataque 🗡️ = ${champion.info.attack} </p>`
+  document.getElementById("modal-defense").innerHTML=`<p>Defensa 🛡️ = ${champion.info.defense} </p>`
+  document.getElementById("modal-magic").innerHTML=`<p>Magia 🔮 = ${champion.info.magic} </p>`
+  document.getElementById("modal-difficulty").innerHTML=`<p> Dificultad⚔️ = ${champion.info.difficulty} </p>`
   
   modal.onclick = function () {
     modal.style.display = 'none';
