@@ -1,6 +1,6 @@
 *{
     list-style: none;
-    margin:0px;
+     margin:0px;
     padding: 0px;
     text-decoration: none;
     box-sizing: border-box;
@@ -57,7 +57,7 @@
 }
 .elementos{
     display: inline-grid;
-    height: 350px;
+    height: 370px;
     padding: 10px;
     margin: 20px;
     border: 1px solid #937341;
@@ -131,7 +131,7 @@ body{
 }
 .botones:hover{
     color:white;
-    background-color:black;
+    background-color:black ;
 }
 .titulo{
     font-family: 'Syncopate', sans-serif;
@@ -182,21 +182,22 @@ footer{
   /* Modal Content/Box */
   .modal-content {
     background-color: #fefefe;
-    margin: 10% auto; /* 15% from the top and centered */
+    margin: 5% auto; /* 15% from the top and centered */
     padding: auto;
-    border: 1px solid #888;
-    width: 70%;
-    height: 70%; /* Could be more or less, depending on screen size */
+    width: 50%;
+    height: 40%; /* Could be more or less, depending on screen size */
   }
   .imgModal{
-      height: 30%;
-      width: 60%;
-      justify-content: center;
+    width: 100%;
   }
-  
-  
-  
- 
+
+  #modal-blurb,#modal-name,#modal-magic,#modal-defense,#modal-difficulty,#modal-attack,#modal-title{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 20px;
+      color:white;
+      background-color: #B4923B;
+     text-align: center;
+  }
 
   /*  Extra small devices (phones, 600px and down) */ 
   @media (min-width: 320px) and (max-width: 767px) {
