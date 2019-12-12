@@ -108,6 +108,9 @@ export const search = (e) => {
    
   });
   e.preventDefault();
+  result.forEach(element => {
+    document.getElementById(element.id).addEventListener("click", () => showModal(element));
+  });
 };
 
 const showModal = (champion) => {
