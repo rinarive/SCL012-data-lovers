@@ -55,6 +55,11 @@ export const sortBy = (sortBy) => {
       <h3 class"titulo">${element.title}</h3>
       <p class"titulo"> HP: ${element.stats.hp} ❤️ </p>
     </div>`;
+    result.forEach(element => {
+      if(document.getElementById(element.id)!=null){
+        document.getElementById(element.id).addEventListener('click', () => showModal(element));
+       }
+      });
     });
   } else if (sortBy === 'za') {
     result = arrayChampions.sort((a, b) => {
@@ -70,8 +75,10 @@ export const sortBy = (sortBy) => {
       <p class"titulo"> HP: ${element.stats.hp} ❤️ </p>
     </div>`;
     result.forEach(element => {
-      document.getElementById(element.id).addEventListener('click', () => showModal(element));
-    });
+      if(document.getElementById(element.id)!=null){
+        document.getElementById(element.id).addEventListener('click', () => showModal(element));
+       }
+      });
     });
   } else {
     arrayChampions.forEach(element => {
@@ -84,7 +91,9 @@ export const sortBy = (sortBy) => {
       <p class"titulo"> HP: ${element.stats.hp} ❤️ </p>
     </div>`;
          result.forEach(element => {
-          document.getElementById(element.id).addEventListener('click', () => showModal(element));
+          if(document.getElementById(element.id)!=null){
+            document.getElementById(element.id).addEventListener('click', () => showModal(element));
+           }
         });
     });
   }
